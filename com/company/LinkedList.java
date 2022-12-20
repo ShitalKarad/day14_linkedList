@@ -12,8 +12,6 @@ public class LinkedList<T> {
             newNode.next = head;
             head = newNode;
         }
-
-
     }
     public void display() {
         Node<T> temp = head;
