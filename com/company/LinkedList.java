@@ -5,8 +5,13 @@ public class LinkedList<T> {
     Node<T> tail;
     public void push(T key){
         Node<T> newNode = new Node<>();
-        head=newNode;
-        tail= newNode;
+        if (head == null){
+            head=newNode;
+            tail= newNode;
+        }else {
+            newNode.next = head;
+            head = newNode;
+        }
 
     }
 }
